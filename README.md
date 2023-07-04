@@ -1,2 +1,1 @@
-# nextjs-basics
-A project built with NextJS to learn on creating a blog as basics
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
