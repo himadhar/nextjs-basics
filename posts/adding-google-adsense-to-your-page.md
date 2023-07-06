@@ -1,5 +1,5 @@
+---
 title: 'Adding Google AdSense To Your Page'
-'
 date: '2015-10-09'
 ------------------
 
