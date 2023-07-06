@@ -3,8 +3,15 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.css';
+import { useRouter } from 'next/router'
 
 export default function Post({ postData }) {
+    const router = useRouter()
+
+    if (!router.isFallback && !postData && !posts) {
+        return <ErrorPage statusCode={404} />
+    }
+    
     return (
         <Layout>
             <Head>
