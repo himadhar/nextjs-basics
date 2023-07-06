@@ -1,4 +1,4 @@
-import Layout from '../../components/layout';
+import Layout, { siteTitle } from '../../components/layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Date from '../../components/date';
@@ -11,11 +11,11 @@ export default function Post({ postData }) {
     if (!router.isFallback && !postData && !posts) {
         return <ErrorPage statusCode={404} />
     }
-    
+
     return (
         <Layout>
             <Head>
-                <title>{postData.title}</title>
+                <title>{siteTitle} - {postData.title}</title>
             </Head>
             <article>
                 <h1 className={utilStyles.headingXl}>{postData.title}</h1>
