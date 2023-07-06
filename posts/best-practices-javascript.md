@@ -1,5 +1,5 @@
+---
 title: 'Best Practices – JavaScript'
-'
 date: '2017-08-19'
 ------------------
 

@@ -1,5 +1,5 @@
+---
 title: 'Improve JavaScript: Creating a Plugin using jQuery'
-'
 date: '2015-12-10'
 ------------------
 
