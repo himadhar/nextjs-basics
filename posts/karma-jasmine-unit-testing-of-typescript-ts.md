@@ -1,11 +1,17 @@
 ---
-title: 'Best IDE for Web Development in 2021'
+title: 'Unit Testing using TypeScript (TS)'
 date: '2017-11-11'
 ---
-# Karma and Jasmine: Unit Testing of TypeScript (TS)
+
+Unit Testing using TypeScript (TS)
 
 ## Introduction
-Unit testing is an essential part of software development, ensuring that individual units of code perform as expected. This article explains how to perform unit testing on TypeScript (TS) code using Karma and Jasmine.
+
+![](/images/blogs/js-basics.jpeg)
+
+I have been through multiple websites to find a solution to handle TypeScript unit testing and seems like using the Karma-Jasmine combination is a good start. With this post, I intend to summarize it and hope it helps you while doing so.
+
+Below are a set of configurations you need to have to proceed.
 
 ## Prerequisites
 Before getting started, make sure you have the following prerequisites installed:
@@ -56,5 +62,31 @@ karma start
 
 Karma will launch a browser (Chrome in this case) and run your tests, displaying the results in the command line.
 
+## Example
+
+### code.ts
+
+```
+function subtract(a: number, b: number): number {
+  return a - b;
+}
+```
+### test.ts
+```
+describe('subtract method', () => {
+  it('subtracts 2 numbers', () => {
+    expect(subtract(2, 4)).toBe(-3);
+  });
+  it('subtracts 2 numbers', () => {
+    expect(subtract(2, 4)).toBe(-2);
+  });
+});
+```
+
 ## Conclusion
 By following these steps, you can set up unit testing for your TypeScript code using Karma and Jasmine. Writing unit tests helps ensure the correctness and reliability of your code, leading to more robust software development. Start writing tests for your TypeScript projects and enjoy the benefits of a well-tested codebase.
+
+
+<h6 style="text-align: right">
+- Himadhar
+</h6>
